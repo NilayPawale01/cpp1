@@ -1,0 +1,5 @@
+Git Push Local to Global
+
+git add .
+git commit -m "Hello"
+git push
