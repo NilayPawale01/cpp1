@@ -1,0 +1,121 @@
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb
+$ git init -b main
+Initialized empty Git repository in D:/bb/.git/
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git add .
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git commit -m "aaaaa"
+[main (root-commit) 96b203b] aaaaa
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Team Player Assignment.docx
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git remote add origin https://github.com/NilayPawale01/cpp1.git
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git remote -v
+origin  https://github.com/NilayPawale01/cpp1.git (fetch)
+origin  https://github.com/NilayPawale01/cpp1.git (push)
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git push origin main
+To https://github.com/NilayPawale01/cpp1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/NilayPawale01/cpp1.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$  git push --set-upstream origin main
+To https://github.com/NilayPawale01/cpp1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/NilayPawale01/cpp1.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git push -f origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/NilayPawale01/cpp1.git'
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git push -f origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 342.44 KiB | 17.12 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/NilayPawale01/cpp1.git
+ + e899b61...96b203b main -> main (forced update)
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git branch
+* main
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git checkout aa1
+error: pathspec 'aa1' did not match any file(s) known to git
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git fetch
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (23/23), done.
+remote: Total 29 (delta 4), reused 20 (delta 3), pack-reused 0
+Unpacking objects: 100% (29/29), 359.77 KiB | 4.67 MiB/s, done.
+From https://github.com/NilayPawale01/cpp1
+ * [new branch]      b1         -> origin/b1
+ * [new branch]      iacsd1     -> origin/iacsd1
+ * [new branch]      master     -> origin/master
+ * [new branch]      new        -> origin/new
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git checkout nn1
+error: pathspec 'nn1' did not match any file(s) known to git
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git checkout sid01
+error: pathspec 'sid01' did not match any file(s) known to git
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (main)
+$ git checkout -b mai1
+Switched to a new branch 'mai1'
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (mai1)
+$ git push -f origin mai1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'mai1' on GitHub by visiting:
+remote:      https://github.com/NilayPawale01/cpp1/pull/new/mai1
+remote:
+To https://github.com/NilayPawale01/cpp1.git
+ * [new branch]      mai1 -> mai1
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (mai1)
+$ git status
+On branch mai1
+nothing to commit, working tree clean
+
+Nilaypawale@DESKTOP-AR3C27G MINGW64 /d/bb (mai1)
+$
